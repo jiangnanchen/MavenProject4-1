@@ -182,8 +182,8 @@ public class TestECShopBGLogin2 {
 	if(bt.equalsIgnoreCase("firefox")){
 		
 		//启动Firefox
-	  System.setProperty("webdriver.firefox.bin",
-	  "F:\\Program Files\\Fire\\firefox.exe");
+	 // System.setProperty("webdriver.firefox.bin",
+	  //"F:\\Program Files\\Fire\\firefox.exe");
 	  driver = new FirefoxDriver();
 	  Log.info("FireFox browser start 。。。。");
 	} else if(bt.equalsIgnoreCase("chrome")){
@@ -205,7 +205,7 @@ public class TestECShopBGLogin2 {
 
   @DataProvider
   public Object[][] dp() {
-	  return ReadExcelPOI.getTestData("H:\\Selenium", "数据_ECShop_后台登录.xls","后台登录");
+	  return ReadExcelPOI.getTestData("D:\\Jenkins\\MavenPro4", "数据_ECShop_后台登录.xls","后台登录");
     
   }
 //  /**
